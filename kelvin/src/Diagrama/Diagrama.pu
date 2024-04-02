@@ -1,0 +1,51 @@
+@startuml
+package es\kelvin\tierno\madrid\parla\diagrama{
+    package model{
+        class Banco{}
+        abstract Empleado #SkyBlue{
+            #nombre:String
+            #id:int
+            #tareaActual:Tarea
+            +atender():void
+        }
+        class Cajero extends Empleado{
+            +atender():void
+        }
+        class Asesores extends Empleado{
+            +atender():void
+        }
+        class Gerente extends Empleado{
+            +atender():void
+        }
+        class Tarea{
+            -tipo: String
+            -cliente: String
+        }
+        class Cola{
+            -tareas: Queue<Tarea>
+            +agregar():Tarea
+            +obtener():void
+        }
+
+
+    }
+    package main{
+        class App{
+            +main():String
+        }
+    }
+
+    package entrada{
+        class entrad{
+            +leerEntero:int
+            +leerString:String
+        }
+    }
+
+    Banco ---* Empleado
+    Empleado "1" ----* "N"Tarea:asignada a
+    Cola "1" *-right- "many" Tarea : contiene
+}
+
+
+@enduml
