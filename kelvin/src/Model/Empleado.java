@@ -5,6 +5,9 @@ public class Empleado {
     protected int id;
     protected Tarea tareas;
 
+    public Empleado() {
+    }
+
     public Empleado(String name, int id, Tarea tareas) {
         this.name = name;
         this.id = id;
@@ -35,6 +38,9 @@ public class Empleado {
         this.tareas = tareas;
     }
 
-    public void atender(){}
+    public void atender() {
+       
+
+    }
 
 }

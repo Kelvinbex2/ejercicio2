@@ -2,7 +2,7 @@ package Entrada;
 
 import java.util.Scanner;
 
-class Entrada {
+public class Entrada {
     static Scanner sc = new Scanner(System.in);
 
     public static int leerEntero() {
