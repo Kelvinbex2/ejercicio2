@@ -1,6 +1,6 @@
 package Model;
 
-public class Empleado {
+public abstract class  Empleado {
     protected String name;
     protected int id;
     protected Tarea tareas;
@@ -8,10 +8,9 @@ public class Empleado {
     public Empleado() {
     }
 
-    public Empleado(String name, int id, Tarea tareas) {
+    public Empleado(String name, int id) {
         this.name = name;
         this.id = id;
-        this.tareas = tareas;
     }
 
     public String getName() {
@@ -38,9 +37,10 @@ public class Empleado {
         this.tareas = tareas;
     }
 
-    public void atender() {
-       
+    public void atender() { }
 
+    public void asignarTarea(Tarea tarea) {
+        tareas = tarea;
     }
 
 }
