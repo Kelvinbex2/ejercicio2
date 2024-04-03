@@ -17,7 +17,7 @@ public class Gerente extends Empleado {
             sb.append("name: ").append(name).append("\n");
             sb.append("id: ").append(id).append(",");
             sb.append("Tarea: ").append(tareas.getTipo()).append(" esta con  el cliente ").append(tareas.getCliente());
-            Thread.sleep(3000);// Simulamos que se tarda 1 segundo en atender la llamada
+            Thread.sleep(3000,1500);;// Simulamos que se tarda 1 segundo en atender la llamada
             System.out.println(sb.toString());
         } catch (InterruptedException e) {
             e.printStackTrace();

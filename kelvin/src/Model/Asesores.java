@@ -18,7 +18,7 @@ public class Asesores extends Empleado {
             sb.append("id: ").append(id).append("\n");
             sb.append("Tarea: ").append(tareas.getTipo()).append(" esta con el cliente ").append(tareas.getCliente());
             System.out.println(sb.toString());
-            Thread.sleep(3000);// Simulamos que se tarda 1 segundo en atender la llamada
+            Thread.sleep(2000,1500);
            
         } catch (InterruptedException e) {
             e.printStackTrace();

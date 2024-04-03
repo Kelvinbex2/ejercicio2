@@ -20,7 +20,7 @@ public class Cajero extends Empleado {
             sb.append("idCajero:").append(id).append("\n");
             sb.append("Tarea: ").append(tareas.getTipo()).append(" esta con el cliente ").append(tareas.getCliente());
             System.out.println(sb.toString());
-            Thread.sleep(1000);
+            Thread.sleep(1000,1500);
 
         } catch (InterruptedException exception) {
             exception.printStackTrace();

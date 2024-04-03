@@ -34,13 +34,13 @@ public class App {
             if (tarea != null) {
 
 
-                cajero.asignarTarea(tarea);
+                cajero.asignarTarea(tarea1);
                 cajero.atender();
 
-                asesores.asignarTarea(tarea);
+                asesores.asignarTarea(tarea2);
                 asesores.atender();
 
-                gerente.asignarTarea(tarea);
+                gerente.asignarTarea(tarea3);
                 gerente.atender();
 
                 
