@@ -13,17 +13,34 @@ public class Gerente extends Empleado {
     public void atender() {
         try {
             StringBuilder sb = new StringBuilder();
-            sb.append(TAG).append("\n");
-            sb.append("name: ").append(name).append("\n");
-            sb.append("id: ").append(id).append(",");
-            sb.append("Tarea: ").append(tareas.getTipo()).append(" esta con  el cliente ").append(tareas.getCliente());
-            Thread.sleep(3000,1500);;// Simulamos que se tarda 1 segundo en atender la llamada
+            sb.append(TAG).append("");
+            Thread.sleep(1000);
             System.out.println(sb.toString());
+            sb.setLength(0);
+
+            sb.append("name: ").append(name).append("");
+            Thread.sleep(1000);
+            System.out.println(sb.toString());
+            sb.setLength(0);
+
+            sb.append("id: ").append(id).append("");
+            Thread.sleep(1000);
+            System.out.println(sb.toString());
+            sb.setLength(0);
+
+
+            sb.append("Tarea: ").append(tareas.getTipo()).append(" esta con  el cliente ").append(tareas.getCliente());
+            Thread.sleep(1000);
+            System.out.println(sb.toString());
+            sb.setLength(0);
+
+            Thread.sleep(1000);
+            System.out.println("Tarea de " + tareas.getTipo() + " atendida por el Gerente " + name + "\n");
+            
+            
+
         } catch (InterruptedException e) {
             e.printStackTrace();
-
-        } finally {
-            System.out.println("Tarea de " + tareas.getTipo() + " atendida por el Gerente " + name + "\n");
 
         }
     }
